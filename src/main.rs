@@ -12,7 +12,7 @@ static TERMINAL_TAG: header::Terminal = header::Terminal::new();
 #[link_section = ".stivale2hdr"]
 #[no_mangle]
 #[used]
-static STIVALE_HDR: Header = Header::new(Some(entry_porzint), &STACK[4095] as *const u8 as *const (), HeaderFlags::empty(), &TERMINAL_TAG as *const header::Terminal);
+static STIVALE_HDR: Header = Header::new(Some(entry_porzint), &STACK[4095] as *const u8 as *const (), HeaderFlags::empty(), &TERMINAL_TAG);
 
 extern "sysv64" fn entry_porzint(_structure: *const Structure) -> ! {
     let mut com1: Port<u8> = Port::new(0x3F8);
