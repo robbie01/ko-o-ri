@@ -91,7 +91,7 @@ dependencies = [
 [[package]]
 name = "stivale2"
 version = "0.0.1"
-source = "git+https://github.com/robbie01/stivale2.git#adc09a7ad96d8c9f889e2e9b7ac07ab185eb0b2a"
+source = "git+https://github.com/robbie01/stivale2.git#094408560f064302315fc594137687306393a1ff"
 dependencies = [
  "bitflags",
  "cstr_core",
